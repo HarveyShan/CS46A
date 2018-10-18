@@ -1,0 +1,74 @@
+
+/**
+ * Harvey Shan 
+ *
+ */
+public class LetterSearcher {
+	private char letter;
+	
+
+/**
+ * constructor 
+ *@param theLetter input 
+ */
+	public LetterSearcher(String theLetter)
+	{
+		char temp = theLetter.substring(0, 1).charAt(0);
+		letter = temp;
+	}
+
+/**
+ * @param phrase the input 
+ *count letter 
+ *@return count
+ */
+	
+	public int letterCount(String phrase)
+	{
+		int count = 0;
+		for(int i = 0; i < phrase.length(); i++)
+		{
+			if(phrase.charAt(i) == letter)
+			{
+				count++;
+			}
+		}
+		return count;
+	}
+	
+	
+
+/**
+ * @param phrase phrase 
+ *@return the count 
+ */
+	public int doubleIndex(String phrase)
+	{
+		int doubleIndex = 0;
+		if(phrase.length() == 1)
+		{
+			doubleIndex = 1;
+		}
+		for(int i = 0; i < phrase.length(); i++)
+		{
+			if(phrase.charAt(i) == phrase.charAt(i+1))
+			{
+				doubleIndex = phrase.charAt(i);
+			}
+		}
+		return doubleIndex;
+	}
+	
+	
+
+/**
+ * 
+ *@return tempS the letter 
+ */
+	public String getLetter()
+	{
+		char tempC = letter;
+		String tempS = String.valueOf(letter);
+		return tempS;
+	}
+}

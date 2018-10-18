@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+   code {color:green;
+   font-family: "Courier New", Courier, monospace;
+   font-size:1.1em;
+   font-weight:bold;
+   }
+   
+    .attention{
+	color: red;
+   }
+   
+   .example{
+	background-color:#CCC;
+	margin-left:2em;
+		
+   }
+   
+   .segment{
+	clear: none;
+    background-color: #FFFACD /* lemonchiffon */;
+    border-color: #00008B /* darkblue */;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-style: solid;
+    border-left-width: medium;
+    border-top-width: thin;
+    border-right-width: thin;
+    border-bottom-width: thin;
+    }
+
+   .problemHeader {
+	background-color:#CFF;
+}
+
+</style>
+<title>CS46A Spring 18 Exam1</title>
+</head>
+
+<body>
+<h1 align="center">EXAM 1</h1>
+<h2 align="center">CS 46A Fall 2018</h2>
+<h2>Exam Rules </h2>
+<ul>
+  <li>The exam is over at 2:40. Close Bluej.</li>
+  <li>Do not use Codecheck after 2:40. You should use Codecheck as you go.</li>
+  <li>Spend the last 5 minutes uploading your code.</li>
+  <li>You may not leave the room until the exam is over.</li>
+  <li>You may use your textbook and material on your computer</li>
+  <li>You may NOT communicate with anyone during the exam.</li>
+  <li>You may NOT use the work of anyone else without attribution.</li>
+  <li class="style1">You may NOT open any  web sites except Canvas to upload your files or Codecheck</li>
+  <li>At 2:40, upload the four signed.zip files and the 5_trace.rtf into Canvas all at the same time</li>
+  <li> If you can not upload to Canvas, put your signed.zip and .rtf files on your USB and turn that in. Put your files in a folder named lastName_firstName. If you want the USB back, put your name on the drive itself</li>
+</ul>
+<p class="problemHeader" >1. </p>
+<p>Write an application, <code>FavoriteSnack</code>, to ask the user for his/her favorite  snack and do the things listed below.  There is no starter file. </p>
+<p>Note: the snack may contain more than one word.</p>
+<p>An application has a main method: <code>public static void main(String[] args)</code></p>
+<p>Use this exact prompt:</p>
+<p>System.out.print(&quot;What is your favorite  snack? &quot;);</p>
+<p>Then do the following</p>
+<ul>
+  <li>Print the length of the string</li>
+  <li>Print the last two letters of the name. You can assume the word is at least 2 characters long</li>
+  <li>In the original string, replace lowercase &quot;c&quot; with  left square bracket <tt>(&quot;[&quot; </tt>) and replace &quot;o&quot; with &quot;0&quot;. (That is lowercase letter &quot;o&quot; with the number &quot;0&quot; )Do not change the original word</li>
+  <li>Print the changed string</li>
+  <li>Print the original string</li>
+</ul>
+<p><a href="http://www.codecheck.it/files/1807311642cx009scu6cp4i62lbosqzt223">Codecheck URL</a><br>
+</p>
+<p class="problemHeader">2.</p>
+<p>Java, Inc wants to design a logo like the image below. Write an application <code>LogoViewer</code> to draw the image. The image consists of 3 circles whose center is on the same horizontal line. The middle circle is tangent (meets at one point) to the other two.There is a straight line between the center of the first circle and the center of the third circle.</p>
+<p><img src="images/2_drawing_screenshot.png" width="360" height="206" alt="screen shot of the drawing"></p>
+<p>Specifications:</p>
+<ul>
+  <li>The circles all have a radius of 50.</li>
+  <li>The center of the first circle is at (100, 120). Calculate the upper left hand cornor as you did in the lab.</li>
+  <li>What is the diameter of the circles? You can use that information to calculate coordinates of the other circles.</li>
+  <li>Fill the first circle the red, the second with blue and the third with yellow. Use the colors from the Color class.</li>
+  <li>Straight line between the center of the first circle and the center of the third circle in black</li>
+</ul>
+<p>Draw in the given order: red circle; blue circle, yellow cirecl, black line. Use the pre-defined colors from the Color class.</p>
+<p>Remember you need to import the graphics package.</p>
+<p>HINT: Notice that you are given the center of the circle and the radius, but to draw an Ellipse you need to calculate the upper left-hand corner of the bounding rectangle and the diameter. You did this in Lab 4. </p>
+<p><a href="http://www.codecheck.it/files/180731171348faacks1817j4eln9xjukq0q">Codecheck URL</a></p>
+<p class="problemHeader">3.     </p>
+<p>Write a class <code>CerealBox</code> to model a cereal box. a cereal box has double values width,  height and  depth.</p>
+<p>The<code> CerealBox</code> class has a constructor that takes the width,  height, and depth of the box as  parameters (in that order).</p>
+<p>The class has many methods, but you only need to implement the following methods:</p>
+<ul>
+  <li><code>public double getWidth()</code> Gets the width of this<code> CerealBox</code></li>
+  <li><code> public void setWidth(double theWidth)</code> sets a new width  for the <code> CerealBox</code></li>
+  <li><code> public double getVolume</code>() Gets the  volume of the<code> CerealBox </code>so we know how much cereal it can hold. </li>
+</ul>
+<p>Provide Javadoc for the class, all methods, and the constructor.</p>
+<p>There is no starter, but there is a tester in Codecheck</p>
+<p><a href="http://www.codecheck.it/files/1808010312e27ud7p4dlzzx1wc8xg6ofn0">Codecheck URL</a></p>
+<p>&nbsp;</p>
+
+<p class="problemHeader">4. </p>
+<p>Complete the method <code>comparative()</code> in the <code>Adjective</code> class. <code>Adjective</code> has a constructor (provided for you) that takes an English adjective as a String . Methods to get and set the adjective are also provided. Adjectives have a comparative and superlative form. You will complete the comparative method which returns the comparative form of the adjective. Follow the rules in the order below to find the comparative of an adjective (This is not strictly correct but we will pretend it is. Just follow the rules) Your code needs to work for all adjectives, not just the ones in the tester.</p>
+<ul>
+  <li>If the adjective is one of the irregular adjectives given in the the table below, return the comparative form  from the table</li>
+  <li>If the adjective ends in a y, drop the &quot;y&quot; and add &quot;ier&quot; (easy - &gt;easier, happy -&lt; happier))</li>
+  <li> If the adjective has 5 of less letters, add &quot;er&quot; to form the comparative. (hard -&gt; harder. old -&gt; older)</li>
+  <li>If the adjective has more than 5 letters, the comparative is formed by adding &quot;more &quot; in front of the adjective (anxious - more anxious, beautiful -&gt; more beautiful)</li>
+</ul>
+<p>Here is a table of irregular adjectives</p>
+<table width="25%" border="2" cellspacing="1" cellpadding="1">
+  <tr>
+    <th scope="col">adjective </th>
+    <th scope="col">comparative</th>
+  </tr>
+  <tr>
+    <td>good</td>
+    <td>better</td>
+  </tr>
+  <tr>
+    <td>far</td>
+    <td>farther</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>Use if / else if / else. Do not use if / if / if. Use only 1 return statement.</p>
+<p><a href="http://www.codecheck.it/files/18080103004jplgqx3sdwq8yabq19z8ufzj">Codecheck URL</a></p>
+
+<p class="problemHeader">5. </p>
+<p>The program below has a faulty implementation of the method printChange.</p>
+<p>The method might be called like this.</p>
+<p> <code>ChangeGiver change = new ChangeGiver();<br />
+change.printChange(42);</code></p>
+<p>Trace the  method call. Record results in the given  file (<span class="style1">5_trace.rtf located in the  folder you downloaded)</span>. You can use TextEdit on the Mac or Wordpad on Windows </p>
+<p>Fill in the columns in the table in 5_trace.rtf. Do not make your own  file. I will only grade 5_trace.rtf. I have entered the first value for you. Notice that the value that changes in line1 of the code is entered in line 1 of the table</p>
+<p>  Enter  each value in a different row. You will enter the value of the variable that changes in line 2 of the code on line 2 of the table. Then enter the value of the variable that changes in line 3 of the code on line 3 of the table.</p>
+<p> Since the method is not correct, you should not expect it to work right. In your trace, <strong>show what happens, not what should happen</strong>.</p>
+<pre>public class ChangeGiver
+{
+       final int QUARTER_VALUE = 25;
+       final int DIME_VALUE = 10;
+       final int NICKEL_VALUE = 5;
+
+
+       /**
+        * Prints the smallest number of quarters, dimes and nickels 
+        * needed to give the specified amount of change
+        * @param changeToGive the amount of change to give
+        */
+       public void printChange(int changeToGive)
+       {
+           int quartersToGive = changeToGive - QUARTER_VALUE; //line 1
+           int remainder = changeToGive % quartersToGive;     //line 2
+           int dimesToGive = changeToGive / DIME_VALUE;       //line 3
+           remainder = remainder - dimesToGive + 1;           //line 4
+           int nickelsToGive = changeToGive / NICKEL_VALUE;   //line 5
+           int penniesToGive = nickelsToGive % NICKEL_VALUE - 1;   //line 6
+
+           // code to actually print would go here
+       }
+}
+
+
+</pre>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+public class LoopsAndMore {
+	public int sumEveryThird(int limit)
+	{
+		int sum = 3;
+		
+		for(int i = 3; i < limit; i=+3) {
+			if((int)sum / 5 != 0 ) {
+				sum =+ 3;
+			}
+			else {
+				sum =+ 6;
+			}
+		}
+		
+		return sum;
+	}
+	
+	
+	
+	public String printJava(int count)
+	{
+		return null;
+	}
+	
+	
+	public int largestPowerOf2(int target)
+	{
+		return 0;
+	}
+	
+    public static void main(String[] args)
+    {
+        LoopsAndMore loops = new LoopsAndMore();
+        System.out.println(loops.sumEveryThird(36));
+        System.out.println("Expected: 153");
+        
+    }
+}
+

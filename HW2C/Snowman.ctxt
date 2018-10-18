@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Snowman
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Snowman\ here.\r\n\r\n\ @author\ (Harvey\ Shan)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=theX\ theY
+comment1.target=Snowman(int,\ int)
+comment1.text=\r\n\ @param\ theX\ the\ x\ coord\r\n\ @param\ theY\ the\ y\ coord\r\n\ this\ method\ creates\ a\ new\ snowman\r\n
+comment2.params=
+comment2.target=void\ draw()
+comment2.text=\r\n\ \r\n\ \ the\ method\ name\ is\ poor\ naming\ convention\:<\r\n\ this\ method\ draw\ the\ snowman\r\n\ \r\n
+numComments=3

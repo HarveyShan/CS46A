@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class RemoveDuplicateWords
+{
+   public static void main(String[] args)
+   {
+      Scanner in = new Scanner(System.in);
+      String word = in.next();
+      
+      boolean done = false;
+      while (!done)
+      {
+         String previous = word;
+         word = in.next();
+         if (word.endsWith("."))
+         {
+            word = word;
+            done = true;
+         }
+         if (. . .)
+         {
+            System.out.print(previous + " ");
+         }
+      }
+      System.out.print(word + ".");
+   }
+}

@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class DJIA {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter net income or Q to quit: ");
+		double userInput = input.nextDouble();
+		do {
+			System.out.print("Enter net income or Q to quit: ");
+			System.out.println(userInput);
+			if(!input.hasNextLine())
+			{
+				System.out.println("No values entered");
+			}
+		}while(!input.hasNextDouble());
+	}
+}

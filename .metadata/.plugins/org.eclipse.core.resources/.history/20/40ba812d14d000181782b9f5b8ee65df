@@ -1,0 +1,6 @@
+
+public class DJIA {
+	public static void main(String[] args) {
+		System.out.print("Enter the change for the day or Q to quit: ");
+	}
+}

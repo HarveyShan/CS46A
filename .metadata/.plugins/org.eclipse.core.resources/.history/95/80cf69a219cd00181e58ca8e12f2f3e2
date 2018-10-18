@@ -1,0 +1,7 @@
+
+public class test {
+	public static void main(String[] args) {
+		int result = 0;
+		Math.pow(2, 4);
+	}
+}

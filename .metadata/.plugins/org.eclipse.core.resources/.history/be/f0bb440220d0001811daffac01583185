@@ -1,0 +1,43 @@
+
+public class LetterSearcher {
+	private char letter;
+	public LetterSearcher(String theLetter)
+	{
+		char temp = theLetter.substring(0, 1).charAt(0);
+		letter = temp;
+	}
+	
+	
+	public int letterCount(String phrase)
+	{
+		int count = 0;
+//		for(int i = 0; i < phrase.length(); i++)
+//		{
+//			if(phrase.charAt(i) == letter)
+//			{
+//				count++;
+//			}
+//		}
+		return count;
+	}
+	
+	public int doubleIndex(String phrase)
+	{
+		int doubleIndex = 0;
+//		for(int i = 0; i < phrase.length(); i++)
+//		{
+//			if(phrase.charAt(i) == phrase.charAt(i+1))
+//			{
+//				doubleIndex = phrase.charAt(i);
+//			}
+//		}
+		return doubleIndex;
+	}
+	
+	public String getLetter()
+	{
+//		char tempC = letter;
+		String tempS = String.valueOf(letter);
+		return tempS;
+	}
+}
