@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=SimpleLineManager
+comment0.text=\r\n\ Manages\ a\ collection\ of\ SimpleLine\ objects\r\n\r\n\ @author\ KOBrien\r\n
+comment1.params=
+comment1.target=SimpleLineManager()
+comment2.params=line
+comment2.target=void\ add(SimpleLine)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

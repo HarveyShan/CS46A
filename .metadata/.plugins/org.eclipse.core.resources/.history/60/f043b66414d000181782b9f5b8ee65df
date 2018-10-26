@@ -1,6 +1,0 @@
-
-public class DJIA {
-	public static void main(String[] args) {
-		System.out.print("Enter net income or Q to quit: "); 
-	}
-}
