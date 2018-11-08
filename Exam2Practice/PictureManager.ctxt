@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=PictureManager
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PictureManager\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=manager
+comment1.target=PictureManager(Picture[])
+comment2.params=area
+comment2.target=boolean\ exists(int)
+numComments=3

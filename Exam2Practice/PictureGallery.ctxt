@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=PictureGallery
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PictureGallery\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=PictureGallery()
+comment2.params=p
+comment2.target=void\ add(Picture)
+comment3.params=
+comment3.target=Picture\ shortest()
+numComments=4

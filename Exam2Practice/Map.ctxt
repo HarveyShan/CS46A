@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Map
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Map\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=array
+comment1.target=Map(int[][])
+comment2.params=
+comment2.target=int\ lowest()
+comment3.params=
+comment3.target=int\ lastEntry()
+numComments=4

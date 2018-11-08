@@ -1,51 +1,97 @@
 import java.util.Arrays;
 
+
 /**
  * An array that can grow and shrink
+ * @author Harvey
  */
+ 
 public class GrowableArray
 {
    private String[] contents;
    private int size;  //the number of elements actually in the array
    public static final int CAPACITY = 8;
-
-   
    
    /**
-    * 	
+    * Constructs a string array of the specified capacity
     */
+    
    public GrowableArray()
-   {
-	   String[]theContents = new String[CAPACITY];
-	   contents = theContents;
-	   size = 0;
-	   
+   { 
+       contents = new String[CAPACITY];
    }
    
-   
-
-	   /**
-	 * @param toAdd add element at end
-	 */
-	public void add(String toAdd)
-   {
-		contents[size] = toAdd;
-		size++;
-		growIfNeeded();
-   }
-   
-   
-   
-   
-   /* Notice this is not Javadoc since the method is not part of the public interface
-    * 
-    * If the array is at capacity, doubles the size of the array by creating a new array that is twice 
-    * as big,  copying the elements from the old array to the new array
-    * and assigning the new array to the array reference (instance variable) 
-    * 
-    * (Note: the array is at capacity when the instance variable size equals the length of the array
-    * 
+   /**
+    * Constructs a method to add words to the string array
+    * @param add words to be added to the string array
     */
+    
+   public void add(String add)
+   {
+     if(size < contents.length)
+     {
+         size++;
+         contents[size -1] = add;
+     }
+    
+     if( size == contents.length)
+     {
+           String[] bigger = Arrays.copyOf(contents, size * 2);
+           contents = bigger;
+     }
+   }
+   
+   /**
+    * constructs a method to add words to the string array at the given index
+    * @param add the word to be added to the string array
+    * @param index adds word at the given index number
+    */
+    
+   public void add(String add, int index)
+   {
+     if( size == contents.length)
+       {
+           String[] bigger = Arrays.copyOf(contents, size * 2);
+           contents = bigger;
+       }
+    
+       if(size < contents.length)
+       {
+         size++;
+         for(int i = contents.length; i > index; i--)
+         {
+            contents[i-1] = contents[i-2];
+         }
+      
+           contents[index] = add;
+       }
+   }
+
+   /**
+    * Removes element at the given index
+    * @param index the index number of which element is to be removed
+    */
+    
+   public void remove(int index)
+   {
+       System.out.println("Index is:"+ index);
+       System.out.println("intial size is:"+ size);
+       if(index < size)
+       {
+          for(int i = index +1; i< contents.length; i++)
+          {
+             contents[i-1] = contents[i]; 
+          }
+              size--;
+       }
+       
+       System.out.println("final size is:"+ size);
+   }
+   
+   /**
+    * Double the size of the array if length of array equals to the size
+    */
+    
    private void growIfNeeded()
    {
        if( size == contents.length)
@@ -53,13 +99,9 @@ public class GrowableArray
            String[] bigger = Arrays.copyOf(contents, size * 2);
            contents = bigger;
 
-       }
+       }   
    }
-   
-   
-    
-   //Can not just use Arrays.toString because we only want the elements 
-   //in the partially filled array - not all the elements.
+      
    @Override
    public String toString()
    {
@@ -72,9 +114,7 @@ public class GrowableArray
           }
           s = s + contents[i];
       }
-
       s = s + "]";
       return s;
-   }
-   
+   }   
 }
